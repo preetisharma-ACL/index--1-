@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-Regular.html') format('woff2'),
+    url('../fonts/Recoleta-Regular-2.html') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-Medium.html') format('woff2'),
+    url('../fonts/Recoleta-Medium-2.html') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-SemiBold.html') format('woff2'),
+    url('../fonts/Recoleta-SemiBold-2.html') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Recoleta';
+    src: url('../fonts/Recoleta-Bold.html') format('woff2'),
+    url('../fonts/Recoleta-Bold-2.html') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
