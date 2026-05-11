@@ -12730,7 +12730,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 
 /* ---------- Form Card ---------- */
 .popup-form-card {
-  padding: 25px 28px;
+  padding: 25px 5px;
 }
 
 /* ---------- Form Title ---------- */
@@ -12816,7 +12816,7 @@ body .mfp-wrap .mfp-container .mfp-content .mfp-close:hover::after {
 /* Side by side select row */
 .popup-two-col {
   display: flex;
-  gap: 0px;
+  gap: 5px;
 }
 
 /* Fields styling */
