@@ -2,6 +2,16 @@
 <html lang="zxx">
 
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MKDV5D62');</script>
+    <!-- End Google Tag Manager -->
 
     <!--========= Required meta tags =========-->
     <meta charset="utf-8">
@@ -32,6 +42,11 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKDV5D62" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
 
     <!-- backtotop - start -->
     <div class="xb-backtotop">
@@ -79,12 +94,12 @@
                                             Programs</a>
                                     </li>
                                     <li>
-                                        <a href="#university">Universities</a>
+                                        <a href="#universities">Universities</a>
                                     </li>
                                     <li>
-                                        <a href="#feesstructure">Fees
-                                            Structure</a>
+                                        <a href="#fees">Fees Structure</a>
                                     </li>
+
                                     <li>
                                         <a href="#why">Why Us</a>
                                     </li>
@@ -113,11 +128,10 @@
                                                 </li>
 
                                                 <li class="menu-item">
-                                                    <a href="#university">Universities</a>
+                                                    <a href="#universities">Universities</a>
                                                 </li>
                                                 <li class="menu-item">
-                                                    <a href="#feesstructure">Fees
-                                                        Structure</a>
+                                                    <a href="#fees">Fees Structure</a>
                                                 </li>
                                                 <li class="menu-item">
                                                     <a href="#why">Why
@@ -238,14 +252,14 @@
                                             <div class="col-6">
                                                 <div class="mb-3">
                                                     <label>Full Name <span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control" name="form_name"
+                                                    <input type="text" class="form-control" name="name1"
                                                         placeholder="Enter your full name" />
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="mb-3">
                                                     <label>Email ID <span class="text-danger">*</span></label>
-                                                    <input type="email" class="form-control" name="form_email"
+                                                    <input type="email" class="form-control" name="ef_email"
                                                         placeholder="Enter Email" />
                                                 </div>
                                             </div>
@@ -261,15 +275,15 @@
                                                                 <path d="M0 0l5 6 5-6z" />
                                                             </svg>
                                                         </div>
-                                                        <input type="tel" class="form-control flex-grow-1"
-                                                            name="form_mobile" placeholder="Enter your number" />
+                                                        <input type="tel" class="form-control flex-grow-1" name="phone"
+                                                            placeholder="Enter your number" />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-6">
                                                 <div class="mb-3">
                                                     <label>City<span class="text-danger">*</span></label>
-                                                    <input type="text" class="form-control" name="form_city"
+                                                    <input type="text" class="form-control" name="City"
                                                         placeholder="Enter City" />
                                                 </div>
                                             </div>
@@ -278,7 +292,7 @@
                                                 <div class="col-6">
                                                     <label>Select MBA Specialization<span
                                                             class="text-danger">*</span></label>
-                                                    <select class="form-select" name="form_select">
+                                                    <select class="form-select" name="ef_program">
                                                         <option value="" disabled selected>Select MBA Specialization
                                                         </option>
                                                         <option value="MBA in Business Management">MBA in Business
@@ -304,7 +318,7 @@
                                                 </div>
                                                 <div class="col-6">
                                                     <label>Select University<span class="text-danger">*</span></label>
-                                                    <select class="form-select" name="form_select2">
+                                                    <select class="form-select" name="ef_university">
                                                         <option value="" disabled selected>Select University</option>
                                                         <option value="NMIMS University">NMIMS University</option>
                                                         <option value="Amity University">Amity
@@ -427,21 +441,21 @@
                             in Touch With Us</h5>
                         <form class="popup-form" id="ajax-header-contact-3">
                             <div class="popup-field">
-                                <input type="text" id="fname" name="form_name" placeholder="Enter your name" required>
+                                <input type="text" id="fname" name="name1" placeholder="Enter your name" required>
                             </div>
                             <div class="popup-two-col">
                                 <div class="popup-field">
-                                    <input type="tel" id="phone" name="form_mobile" placeholder="Enter phone number"
-                                        required pattern="^\d{10}$" inputmode="numeric" maxlength="10">
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required
+                                        pattern="^\d{10}$" inputmode="numeric" maxlength="10">
                                 </div>
                                 <div class="popup-field">
-                                    <input type="email" id="email" name="form_email" placeholder="Enter Email" required>
+                                    <input type="email" id="email" name="ef_email" placeholder="Enter Email" required>
                                 </div>
                             </div>
                             <!-- New Row With Two Selects -->
                             <div class="popup-field">
                                 <div class="popup-select-wrapper">
-                                    <select id="course" name="form_select" class="popup-select" required>
+                                    <select id="course" name="ef_program" class="popup-select" required>
                                         <option value disabled selected>Choose MBA Specialization
                                         </option>
                                         <option value="MBA in Business Management">MBA in Business Management</option>
@@ -466,7 +480,7 @@
                             </div>
                             <div class="popup-field">
                                 <div class="popup-select-wrapper">
-                                    <select id="university" name="form_select2" class="popup-select" required>
+                                    <select id="university" name="ef_university" class="popup-select" required>
                                         <option value disabled selected>Choose
                                             University</option>
                                         <option value="NMIMS University">NMIMS University</option>
@@ -485,7 +499,7 @@
                                 </div>
                             </div>
                             <div class="popup-field">
-                                <input type="text" id="city" name="form_city" placeholder="Enter your city" required>
+                                <input type="text" id="city" name="City" placeholder="Enter your city" required>
                             </div>
                             <button type="submit" class="popup-btn full-width bg-light" style="color: #60060f;">
                                 Apply Now
@@ -662,7 +676,7 @@
             <!-- program section end  -->
 
             <!-- University section start  -->
-            <section class=" pt-40  pos-rel" id="university">
+            <section class=" pt-40  pos-rel" id="universities">
                 <div class="container">
                     <div class="section-title text-center mb-25">
                         <span class="sub-title">Our Universities
@@ -947,6 +961,37 @@
                 </div>
             </section>
             <!-- campus section end  -->
+            <!-- fees section start  -->
+            <section class="cta" id="fees">
+                <div class="cta-wrapper bg_img pt-115 pb-120" data-background="assets/img/bg/cta-bg.jpg">
+                    <div class="container">
+                        <div class="xb-cta-wrap z-1 pos-rel">
+                            <div class="section-title text-center mb-40">
+                                <span class="sub-title">Fees structure
+                                </span>
+                                <h2 class="title mb-35"> Fees & EMI
+                                    Options</h2>
+                                <div class="structure-fee-box">
+                                    <p class="structure-fee-main">
+                                        MBA Program Fee: <span>₹1.5 Lakhs – ₹2.5 Lakhs*</span>
+                                    </p>
+                                    <p class="structure-fee-sub">
+                                        ( Flexible NO cost EMI available )
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="cta-btn btns justify-content-center ul_li">
+                                <a class="thm-btn thm-btn--white" data-bs-toggle="modal"
+                                    data-bs-target="#virtualTourModal" data-bs-dismiss="modal">start your
+                                    application
+                                    <span><img src="assets/img/icon/learning.png" alt></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- fees section end  -->
 
 
             <!-- New Contact Section -->
@@ -958,18 +1003,18 @@
                             <h3 class="second-title">Send us a Message</h3>
                             <form class="second-form" id="ajax-header-contact-2">
                                 <div class="second-field">
-                                    <input type="text" id="name" name="form_name" placeholder="Enter your name">
+                                    <input type="text" id="name" name="name1" placeholder="Enter your name">
                                 </div>
                                 <div class="second-field">
-                                    <input type="email" id="email" name="form_email" placeholder="Enter your email">
+                                    <input type="email" id="email" name="ef_email" placeholder="Enter your email">
                                 </div>
                                 <div class="second-field">
-                                    <input type="tel" id="phone" name="form_mobile" placeholder="Enter phone number"
+                                    <input type="tel" id="phone" name="phone" placeholder="Enter phone number"
                                         pattern="^\d{10}$" inputmode="numeric" maxlength="10">
                                 </div>
                                 <div class="popup-field">
                                     <div class="popup-select-wrapper">
-                                        <select id="course" class="popup-select" name="form_select" required>
+                                        <select id="course" class="popup-select" name="ef_program" required>
                                             <option value disabled selected>Choose MBA Specialization
                                             </option>
                                             <option value="MBA in Business Management">MBA in Business Management
@@ -993,7 +1038,7 @@
                                 </div>
                                 <div class="popup-field">
                                     <div class="popup-select-wrapper">
-                                        <select id="university" class="popup-select" name="form_select2" required>
+                                        <select id="university" class="popup-select" name="ef_university" required>
                                             <option value disabled selected>Choose
                                                 University</option>
                                             <option value="NMIMS University">NMIMS
@@ -1015,7 +1060,7 @@
                                     </div>
                                 </div>
                                 <div class="second-field">
-                                    <input type="text" id="city" placeholder="Enter city" name="form_city">
+                                    <input type="text" id="city" placeholder="Enter city" name="City">
                                 </div>
                                 <!-- Checkbox -->
                                 <div class="second-check">
@@ -1096,24 +1141,24 @@
                                         in Touch With Us</h5>
                                     <form class="popup-form" id="ajax-header-contact">
                                         <div class="popup-field">
-                                            <input type="text" id="fname" name="form_name" placeholder="Enter your name"
+                                            <input type="text" id="fname" name="name1" placeholder="Enter your name"
                                                 required>
                                         </div>
-                                        <div class="popup-two-col ">
+                                        <div class="popup-two-col">
                                             <div class="popup-field">
-                                                <input type="tel" id="phone" name="form_mobile"
+                                                <input type="tel" id="phone" name="phone"
                                                     placeholder="Enter phone number" required pattern="^\d{10}$"
                                                     inputmode="numeric" maxlength="10">
                                             </div>
                                             <div class="popup-field">
-                                                <input type="email" id="email" name="form_email"
-                                                    placeholder="Enter Email" required>
+                                                <input type="email" id="email" name="ef_email" placeholder="Enter Email"
+                                                    required>
                                             </div>
                                         </div>
                                         <!-- New Row With Two Selects -->
                                         <div class="popup-field">
                                             <div class="popup-select-wrapper">
-                                                <select id="course" name="form_select" class="popup-select" required>
+                                                <select id="course" name="ef_program" class="popup-select" required>
                                                     <option value disabled selected>Choose MBA Specialization
                                                     </option>
                                                     <option value="MBA in Business Management">MBA in Business
@@ -1139,7 +1184,7 @@
                                         </div>
                                         <div class="popup-field">
                                             <div class="popup-select-wrapper">
-                                                <select id="university" name="form_select2" class="popup-select"
+                                                <select id="university" name="ef_university" class="popup-select"
                                                     required>
                                                     <option value disabled selected>Choose
                                                         University</option>
@@ -1161,7 +1206,7 @@
                                             </div>
                                         </div>
                                         <div class="popup-field">
-                                            <input type="text" id="city" name="form_city" placeholder="Enter your city"
+                                            <input type="text" id="city" name="City" placeholder="Enter your city"
                                                 required>
                                         </div>
                                         <button type="submit" class="popup-btn full-width">
@@ -1179,6 +1224,59 @@
         <!-- form 2 -->
     </div>
 
+    <!-- OTP Modal HTML -->
+    <div class="modal fade" id="modal14" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content otp-modal-box">
+
+                <button type="button" class="otp-close-btn" data-bs-dismiss="modal">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+
+                <div class="otp-header">
+                    <h2>Verify OTP</h2>
+                    <p>Enter the 6-digit code sent to your mobile number</p>
+                </div>
+
+                <div class="divider"></div>
+
+                <form id="otpForm">
+                    <div class="otp-wrapper" role="group" aria-label="OTP input">
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 1" required>
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 2" required>
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 3" required>
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 4" required>
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 5" required>
+                        <input type="text" maxlength="1" class="otp-field" inputmode="numeric" pattern="[0-9]"
+                            aria-label="OTP digit 6" required>
+                    </div>
+
+                    <input type="hidden" name="otp" id="finalOtp">
+
+                    <div class="otp-timer">
+                        <span class="otp-timer-label">Code expires in</span>
+                        <span class="otp-timer-badge" id="timer">04:59</span>
+                    </div>
+
+                    <div class="otp-resend">
+                        Didn't receive OTP?
+                        <a href="javascript:void(0)" id="resendBtn" class="resend-link disabled">Resend</a>
+                    </div>
+
+                    <button type="submit" class="otp-btn">
+                        Verify OTP <span class="arrow-icon">→</span>
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
     <!-- Mobile Bottom CTA -->
     <div class="mobile-cta d-block d-md-none" id="bottom-cta">
         <button class="cta-btn cta-brochure" data-bs-toggle="modal" data-bs-target="#virtualTourModal"
@@ -1190,6 +1288,34 @@
             Enquire Now
         </button>
     </div>
+
+    <script>
+        // OTP Auto Move
+        const otpInputs = document.querySelectorAll(".otp-field");
+        const finalOtpInput = document.getElementById("finalOtp");
+
+        otpInputs.forEach((input, index) => {
+            input.addEventListener("input", () => {
+                if (input.value.length === 1 && index < otpInputs.length - 1) {
+                    otpInputs[index + 1].focus();
+                }
+
+                updateOTP();
+            });
+
+            input.addEventListener("keydown", (e) => {
+                if (e.key === "Backspace" && !input.value && index > 0) {
+                    otpInputs[index - 1].focus();
+                }
+            });
+        });
+
+        function updateOTP() {
+            let otp = "";
+            otpInputs.forEach(input => otp += input.value);
+            finalOtpInput.value = otp;
+        }
+    </script>
 
     <!-- jquery include -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
